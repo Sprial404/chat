@@ -87,8 +87,14 @@ int main(int argc, char *argv[])
         }
       } else if (strcmp(command, "leave") == 0) {
         snprintf(send_buffer, sizeof(send_buffer), "LEAVE\n");
-      } else if (strcmp(command, "listguilds") == 0) {
-        snprintf(send_buffer, sizeof(send_buffer), "LISTGUILDS\n");
+      } else if (strcmp(command, "createguild") == 0) {
+        arg1 = strtok_r(NULL, " ", &saveptr);
+        if (arg1) {
+          snprintf(send_buffer, sizeof(send_buffer), "CREATEGUILD %s", arg1);
+        } else {
+          fprintf(stderr, "Usage: /createguild <guild_name>\n");
+          continue;
+        }
       } else if (strcmp(command, "listguilds") == 0) {
         snprintf(send_buffer, sizeof(send_buffer), "LISTGUILDS\n");
       } else if (strcmp(command, "listchannels") == 0) {
