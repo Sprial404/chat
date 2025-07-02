@@ -1,0 +1,29 @@
+---
+BasedOnStyle: LLVM
+IndentWidth: 2
+---
+Language: Cpp
+AlignAfterOpenBracket: BlockIndent
+AlignConsecutiveAssignments: Consecutive
+AlignConsecutiveDeclarations: true
+BreakBeforeBraces: Custom
+BraceWrapping:
+    AfterCaseLabels: true
+    AfterClass: true
+    AfterEnum: true
+    AfterFunction: true
+    AfterNamespace: true
+    AfterObjCDeclaration: true
+    AfterStruct: true
+    AfterUnion: true
+    AfterExternBlock: true
+    BeforeCatch: false
+    BeforeElse: false
+    BeforeLambdaBody: true
+    BeforeWhile: false
+    SplitEmptyFunction: true
+    SplitEmptyRecord: true
+    SplitEmptyNamespace: true
+ColumnLimit: 120
+IndentExternBlock: NoIndent
+---
