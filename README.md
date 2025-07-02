@@ -21,7 +21,7 @@ A multi-threaded client-server chat application written in C that supports multi
 ### Compilation
 
 ```bash
-make
+$ make
 ```
 
 This will create two executables in the `out/` directory:
@@ -31,7 +31,7 @@ This will create two executables in the `out/` directory:
 ### Cleaning
 
 ```bash
-make clean
+$ make clean
 ```
 
 ## Usage
@@ -39,7 +39,7 @@ make clean
 ### Starting the Server
 
 ```bash
-./out/chat_server
+$ ./out/chat_server
 ```
 
 The server will start listening on port 8080 by default.
@@ -47,7 +47,7 @@ The server will start listening on port 8080 by default.
 ### Connecting Clients
 
 ```bash
-./out/chat_client <server_ip> <server_port>
+$ ./out/chat_client <server_ip> <server_port>
 ```
 
 ## Configuration
@@ -100,7 +100,7 @@ This project is available under the MIT License.
 
 **Server won't start**: Check if port 8080 is already in use:
 ```bash
-lsof -i :8080
+$ lsof -i :8080
 ```
 
 **Client can't connect**: Ensure the server is running and firewall allows connections on port 8080.
@@ -108,8 +108,8 @@ lsof -i :8080
 **Compilation errors**: Make sure you have GCC and pthread library installed:
 ```bash
 # On Ubuntu/Debian
-sudo apt-get install build-essential
+$ sudo apt-get install build-essential
 
 # On macOS (with Homebrew)
-brew install gcc
+$ brew install gcc
 ```
